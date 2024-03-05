@@ -15,3 +15,14 @@ variable "aws_region" {
   description = "(Optional) AWS region to use for resources"
   default     = "ap-southeast-2"
 }
+
+variable "username" {
+  type        = string
+  description = "(Required) SSH username for SFTP"
+  default     = "ryan"
+}
+
+variable "ssh_public_key" {
+  type        = string
+  description = "(Required) SSH public key for SFTP"
+}
